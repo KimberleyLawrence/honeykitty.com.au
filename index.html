@@ -402,64 +402,21 @@
     
   </div>
 </footer>
+
+<!--
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	
-	  <!-- slide show -->
-	 <script> 
-		 var slideIndex = 1;
-showSlides(slideIndex);
+-->	
 
-// Next/previous controls
-function plusSlides(n) {
-	console.log($(this));
-  showSlides(slideIndex += n);
-}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E32ZL997JB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-// Thumbnail image controls
-function currentSlide(n) {
-	console.log($(this));
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-} 
-	  
-	  </script>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  <!-- test to see if toggle images works -->
-	  <script>
-function toggleImage() {
-   var img1 = "images/Fairy_bread_back_mock_black.png";
-   var img2 = "images/Fairy_bread_front_mock.png";
-   
-   var imgElement = document.getElementById('toggleImage');
-
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
-}
+  gtag('config', 'G-E32ZL997JB');
 </script>
-	
 	
 	
 	
