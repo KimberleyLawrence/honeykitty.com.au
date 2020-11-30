@@ -111,11 +111,18 @@ body {
 }
 
 /* where the main content is white */
-main {
+.shopify-collection {
   background-color: #ffffff;
+  padding-top: 2em;
+  min-height: 500px;
+  padding-bottom: 2em;
 }
 
 /* blue-link can bugger off */
 a {
   color: #000;
+}
+
+.jumbotron {
+  max-height: 350px;
 }
