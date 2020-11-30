@@ -104,3 +104,18 @@
 .demo:hover {
   opacity: 1;
 }
+
+/* whole page is grey */
+body {
+  background-color: #e9ecef;
+}
+
+/* where the main content is white */
+main {
+  background-color: #ffffff;
+}
+
+/* blue-link can bugger off */
+a {
+  color: #000;
+}
