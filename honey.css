@@ -124,7 +124,7 @@ a {
 }
 
 .jumbotron {
-  max-height: 350px;
+  max-height: 450px;
 }
 
 .logo_home{
@@ -136,4 +136,9 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.logo{
+  width: 200px;
+  margin-top: 50px;
 }
