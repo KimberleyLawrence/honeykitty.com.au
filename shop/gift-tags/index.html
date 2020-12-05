@@ -31,15 +31,15 @@
 
  
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
-    <link href="honey.css" rel="stylesheet" type="text/css">
+    <link href="/album.css" rel="stylesheet">
+    <link href="/honey.css" rel="stylesheet" type="text/css">
 </head>
 
 
 <header>
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
     <a class="navbar-brand" href="index.html">
-      <img src="images/logo-01.png" height="50px;" alt="Logo">
+      <img src="/images/logo-01.png" height="50px;" alt="Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,10 +47,10 @@
     <div class="collapse navbar-collapse"  id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active ">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="shop.html">Shop</a>
+          <a class="nav-link" href="/shop">Shop</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="print.html">Print To Order</a>
@@ -75,12 +75,16 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-		 <img src="images/logo-01.png" class="logo">
+		 <img src="/images/logo-01.png" class="logo">
     <h3>Cute &amp; Vulgar</h3>
    
 		 <div class="btn-group"> 
+             <a href="/shop/aussie-treats">
                <button type="button" class="btn btn-med btn-outline-secondary">Aussie Treats</button>
+            </a>
+            <a href="/shop/gift-tags">
                <button type="button" class="btn btn-med btn-outline-secondary">Gift Tags</button>
+            </a>
 			 	<button type="button" class="btn btn-med btn-outline-secondary">In the Gym</button>
          </div>
     </div>
@@ -115,7 +119,7 @@
       
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('collection', {
-          id: '237451542698',
+          id: '238015938730',
           node: document.getElementById('collection-component-1606545626090'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
           options: {
@@ -387,7 +391,7 @@
 <footer class="text-muted">
   <div class="container">
     <a href="https://www.instagram.com/honey.kitty/?hl=en" target="_blank"> 
-      <img src="images/INSTAGRAM.svg" width="50px">
+      <img src="/images/INSTAGRAM.svg" width="50px">
     </a>
     <p class="float-right text-right">
       <a href="#">Back to top</a>
