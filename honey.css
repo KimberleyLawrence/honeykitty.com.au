@@ -114,7 +114,7 @@ body {
 .shopify-collection {
   background-color: #ffffff;
   padding-top: 2em;
-  min-height: 500px;
+  min-height: 600px;
   padding-bottom: 2em;
 }
 
@@ -125,4 +125,15 @@ a {
 
 .jumbotron {
   max-height: 350px;
+}
+
+.logo_home{
+  width: 350px;
+  margin-top: 50px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
