@@ -1,0 +1,49 @@
+<!-- head  -->
+<head>
+  <meta charset="UTF-8" />
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <link rel="stylesheet" href="https://use.typekit.net/smg2osy.css">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+
+  <title>
+    {% if page.title == "Home" %} {{ site.title }} &middot; {{ site.tagline }}
+    {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
+
+  <!-- Icons -->
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="144x144"
+    href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png"
+  />
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/images/Myc_Favicon.png" />
+
+  <!-- RSS -->
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="{{ site.title }}"
+    href="{{ site.baseurl }}atom.xml"
+  />
+
+
+  {% feed_meta %} {% seo %}
+  <script>
+      var shiftWindow = function () { scrollBy(0, -75) };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() { if (window.location.hash) shiftWindow(); }
+  </script>
+
+</head>
+<!-- END/head  -->
+
+
+{% capture page_title_downcase %}{{ page.title | downcase }}{% endcapture %}
